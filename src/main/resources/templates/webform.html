@@ -3,21 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Web Form</title>
+    <style>
+        div1 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translate(-50%, -50%);
+            border: 5px  solid lightgrey;
+            border-radius: 5px;
+            background-color: darkred;
+            height: 10%;
+            width: 60%;
+            color:greenyellow;
+            box-shadow: 5px 5px lightgrey;
+        }
+        body{
+            background-color: darkred;
+        }
+    </style>
+
 </head>
 <body>
 
 <div1>
 
-<form action="creategreeting" method="post">
-    <label for="nameId">Name: </label>
-    <input id="nameId" name="name" placeholder="Enter your name" autofocus>
-    <br>
-    <label for="ageId">Age: </label>
-    <input type="number" id="ageId" name="age" placeholder="Enter your age">
-    <br>
-    <button type="submit">Send</button>
-    <button type="Reset">Delete</button>
-</form>
+    <form action="creategreeting" method="post">
+        <label for="nameId">Name: </label>
+        <input id="nameId" name="name" placeholder="Enter your name" autofocus>
+        <label for="ageId">Age: </label>
+        <input type="number" id="ageId" name="age" placeholder="Enter your age">
+        <button type="submit" style="text-align: center">Send</button>
+        <button type="Reset" style="text-align: center">Delete</button>
+    </form>
 
 </div1>
 </body>
